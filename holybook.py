@@ -2,7 +2,7 @@ def word_cnt(st,wrdd):
     wrd = 0
     li = st.split(" ")
     for i in li:
-        if i == wrdd:
+        if i.lower().replace(".", "") == wrdd:
             wrd += 1
     return "wrdd" + " " + "repeats" + " " + str(wrd) + " " + "times"
 
