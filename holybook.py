@@ -7,8 +7,8 @@ def word_cnt(st,wrdd):
     return "wrdd" + " " + "repeats" + " " + str(wrd) + " " + "times"
 
 def main():
-    Passage = "God is love. Love is patient and kind. Love does not envy or boast."
-    print(word_cnt(Passage,"love"))
+    passage = "God is love. Love is patient and kind. Love does not envy or boast."
+    print(word_cnt(passage,"love"))
 
-if __main__ == "__name__":
+if __name__ == "__main__":
     main()
