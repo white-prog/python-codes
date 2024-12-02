@@ -8,6 +8,17 @@ def encode(value,emoji_map):
     value = "blur"
     return new_val
 #function for decode
+def decode(value,emoji_map):
+    reverse_emoji_map = {v: k for k, v in emoji_map.items()}
+    new_val = ""
+    for i in value:
+        if i in reverse_emoji_map:
+            new_val += reverse_emoji_map[i]
+        else:
+            new_val += i
+    value = "blur"
+    return new_val
+
 
 def main():
     emoji_map = {
@@ -38,9 +49,12 @@ def main():
     'y': '\U0001F332',  # 🌲
     'z': '\U0001F334',  # 🌴
 }
+    
     val = "Hello world"
     encoded = encode(val,emoji_map)
     print(encoded)
+    decoded = decode(encoded,emoji_map)
+    print(decoded)
 
 if __name__ == "__main__":
     main()
