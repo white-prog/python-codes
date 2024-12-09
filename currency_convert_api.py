@@ -25,8 +25,8 @@ def currency_converter(val, currency_from, to_currency):
 
 def main():
     print("CURRENCY CONVERTER")
-    value = int(input("Enter number : "))
-    currency_from = input("Enter country code your money is in : ")
+    value = int(input("Enter amout: "))
+    currency_from = input("Enter country code your money is in: ")
     currency_to = input("Enter country code to convert this money: ")
     try:
         currenc = currency_converter(value,currency_from,currency_to)
