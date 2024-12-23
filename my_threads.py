@@ -3,7 +3,7 @@ import time
 import random
 def print_numbers():
     for i in range(4):
-        print("A")
+        print("1")
         time.sleep(0.1)
 
 def print_letters():
